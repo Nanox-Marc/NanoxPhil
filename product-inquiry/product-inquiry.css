@@ -1,7 +1,11 @@
 .product-inquiry-btn {
     /* Exact dimensions from .chat-logo */
-    width: 260px;
-    height: 48px;
+     display: inline-block;
+    width: 350px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;  /* removes underline */
 
     /* Exact typography from .inquire_header */
     font-size: 18px;
