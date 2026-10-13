@@ -167,7 +167,7 @@ function injectProductInquiryButtons(onButtonClick) {
     const btn = document.createElement("button");
     btn.className = "product-inquiry-btn";
     btn.setAttribute("aria-label", "Open product inquiry form");
-    btn.textContent = "Product Inquiry";
+    btn.textContent = "";
     btn.addEventListener("click", (e) => {
         e.stopPropagation();
         onButtonClick();
@@ -241,14 +241,9 @@ function injectProductInquiryButtons(onButtonClick) {
     }
 
     // ── Inject CTA buttons ─────────────────────────────────────
-    //injectProductInquiryButtons(showConfirmation);
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('button, a, div').forEach(el => {
-        if (el.textContent.trim() === 'PRODUCT INQUIRY') {
-            el.remove();
-        }
-    });
-});
+
+    injectProductInquiryButtons(showConfirmation);
+
     // ── Event Listeners — Confirmation Modal ──────────────────
 
     privacyCheckbox.addEventListener("change", syncProceedBtn);
