@@ -241,9 +241,14 @@ function injectProductInquiryButtons(onButtonClick) {
     }
 
     // ── Inject CTA buttons ─────────────────────────────────────
-
     //injectProductInquiryButtons(showConfirmation);
-
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('button, a, div').forEach(el => {
+        if (el.textContent.trim() === 'PRODUCT INQUIRY') {
+            el.remove();
+        }
+    });
+});
     // ── Event Listeners — Confirmation Modal ──────────────────
 
     privacyCheckbox.addEventListener("change", syncProceedBtn);
