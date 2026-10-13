@@ -1,3 +1,9 @@
+#piCtaContainer,
+.product-inquiry-container,
+.product-inquiry-btn{
+    display:none !important;
+}
+
 .product-inquiry-btn {
     /* Exact dimensions from .chat-logo */
      display: inline-block;
