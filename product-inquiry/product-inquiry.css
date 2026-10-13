@@ -1,4 +1,12 @@
-.product-inquiry-btn {
+.product-inquiry-btn{
+     width: 0px;
+    height: 0px;
+    text-decoration: none;
+     background-color:white;
+    color: white;
+}
+
+.product-inquiry-btnx {
     /* Exact dimensions from .chat-logo */
      display: inline-block;
     width: 350px;
@@ -42,7 +50,7 @@
 }
 
 /* Active state — mirrors .chat-logo:active (no transform, no scale) */
-.product-inquiry-btn:active {
+.product-inquiry-btnx:active {
     transform: none !important;
     -webkit-transform: none !important;
     scale: 1 !important;
@@ -52,7 +60,7 @@
 
 /* Desktop hover — mirrors .chat-logo:hover expand + lift */
 @media (min-width: 769px) {
-    .product-inquiry-btn:hover {
+    .product-inquiry-btnx:hover {
         transform: scale(1.08) translateY(-3px);
         background-color: #0b192a;
         border-color: #0b192a;
@@ -62,7 +70,7 @@
 
 /* Mobile — exact .chat-logo mobile values */
 @media (max-width: 768px) {
-    .product-inquiry-btn {
+    .product-inquiry-btnx {
         width: 270px;
         height: 48px;
         border-radius: 0.75rem;
@@ -85,9 +93,9 @@
     }
 
     /* Preserve exact mobile hover/active/focus state */
-    .product-inquiry-btn:hover,
-    .product-inquiry-btn:active,
-    .product-inquiry-btn:focus {
+    .product-inquiry-btnx:hover,
+    .product-inquiry-btnx:active,
+    .product-inquiry-btnx:focus {
         width: 224px !important;
         height: 48px !important;
         background-color: #0b192a !important;
