@@ -740,11 +740,7 @@ rel="noopener noreferrer"
 class="pdf-btn">COST-EFFECTIVE PRODUCT LIST</a>
 </div>
         </div>
-        <center>
-            <section id="Items">
-                <div class="container">
-<!-- Your existing products here -->
-            </section></center>
+       
     <div class="recognition">
         <div class="container">
             <p class="section-title">SIGNIFICANT RECOGNITION AND CITATIONS</p>
@@ -993,13 +989,13 @@ function injectProductInquiryButton(callback){
 
     wrapper.innerHTML = `
         <button
-            class="product-inquiry-btn">
+            class="product-inquiry-btnx">
             Contact us about this product
         </button>
     `;
 
     wrapper
-        .querySelector(".product-inquiry-btn")
+        .querySelector(".product-inquiry-btnx")
         .addEventListener("click", callback);
 
     container.appendChild(wrapper);
