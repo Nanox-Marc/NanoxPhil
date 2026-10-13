@@ -242,7 +242,7 @@ function injectProductInquiryButtons(onButtonClick) {
 
     // ── Inject CTA buttons ─────────────────────────────────────
 
-    injectProductInquiryButtons(showConfirmation);
+    //injectProductInquiryButtons(showConfirmation);
 
     // ── Event Listeners — Confirmation Modal ──────────────────
 
