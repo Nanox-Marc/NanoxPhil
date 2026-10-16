@@ -1,7 +1,7 @@
 .product-inquiry-btn {
     /* Exact dimensions from .chat-logo */
      display: inline-block;
-    width: 350px;
+    width: 200px;/*350px*/
     height: 50px;
     line-height: 45px;
     text-align: center;
@@ -428,15 +428,15 @@
 .pdf-links{
     display:flex;
     jusitfy-content:center;
-    gap:180px;
+    gap:350px;
     margin-top:20px;
 .pdf-btn-right{
-    margin-left:130px;
+    margin-left:200px;
 }
 }
 .pdf-btn {
    display: inline-block;
-    width: 350px;
+    width: 180px; /*350*/
     height: 50px;
     line-height: 45px;
     text-align: center;
