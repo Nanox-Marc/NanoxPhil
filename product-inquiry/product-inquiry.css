@@ -425,14 +425,14 @@
         overflow-y: auto;
     }
 }
-.pdf-links{
+/*.pdf-links{
     display:flex;
     jusitfy-content:center;
     gap:350px;
     margin-top:20px;
 .pdf-btn-right{
     margin-left:200px;
-}
+}*/
 }
 .pdf-btn {
    display: inline-block;
