@@ -732,12 +732,12 @@ display: flex;
 <a href="High End Applications.pdf"
 target="_blank"
 rel="noopener noreferrer"
-class="pdf-btn pdf-btn-right">HIGH-END APPLICATION PRODUCT LIST</a>
+class="pdf-btn pdf-btn-right">HIGH-END</a>
 
 <a href="Cost Effective Applications.pdf"
 target="_blank"
 rel="noopener noreferrer"
-class="pdf-btn">COST-EFFECTIVE PRODUCT LIST</a>
+class="pdf-btn">COST-EFFECTIVE</a>
 </div>
         </div>
         <center>
@@ -991,9 +991,13 @@ function injectProductInquiryButton(callback){
     wrapper.className =
         "product-inquiry-container";
 
-
+    wrapper.innerHTML = `
+        <button
+            class="product-inquiry-btn">
+            Product Inquiry
+        </button>
     `;
-
+     // Bonin
     wrapper
         .querySelector(".product-inquiry-btn")
         .addEventListener("click", callback);
