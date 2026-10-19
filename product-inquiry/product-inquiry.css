@@ -61,9 +61,9 @@
 }
 
 /* Mobile — exact .chat-logo mobile values */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .product-inquiry-btn {
-        width: 270px;
+        width: 350px;
         height: 48px;
         border-radius: 0.75rem;
         border: 3px solid #40526b;
@@ -85,7 +85,7 @@
     }
 
     /* Preserve exact mobile hover/active/focus state */
-    .product-inquiry-btn:hover,
+    /*.product-inquiry-btn:hover,
     .product-inquiry-btn:active,
     .product-inquiry-btn:focus {
         width: 224px !important;
@@ -100,14 +100,24 @@
         transition: none !important;
         color: #ffffff !important;
     }
-}
+}*/
+/* Mobile Product Buttons */
 /* Mobile Product Buttons */
 @media (max-width: 768px) {
 
+    .product-inquiry-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
     .pdf-btn
-     {
+    {
         width: 90%;
-        max-width: 320px;
+        max-width: 350px;
         min-height: 48px;
         padding: 12px 16px;
 
