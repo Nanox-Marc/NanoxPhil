@@ -1,7 +1,7 @@
 .product-inquiry-btn {
     /* Exact dimensions from .chat-logo */
      display: inline-block;
-    width: 350px;
+    width: 350px;/*350px*/
     height: 50px;
     line-height: 45px;
     text-align: center;
@@ -61,8 +61,10 @@
 }
 
 /* Mobile — exact .chat-logo mobile values */
-/*@media (max-width: 768px) {
-    .product-inquiry-btn {
+@media (max-width: 768px) {
+    .product-inquiry-btn,
+        .pdf-links,
+            .pdf-btn {
         width: 350px;
         height: 48px;
         border-radius: 0.75rem;
@@ -85,7 +87,7 @@
     }
 
     /* Preserve exact mobile hover/active/focus state */
-    /*.product-inquiry-btn:hover,
+    .product-inquiry-btn:hover,
     .product-inquiry-btn:active,
     .product-inquiry-btn:focus {
         width: 224px !important;
@@ -100,45 +102,8 @@
         transition: none !important;
         color: #ffffff !important;
     }
-}*/
-/* Mobile Product Buttons */
-/* Mobile Product Buttons */
-@media (max-width: 768px) {
-
-    .product-inquiry-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .pdf-btn
-    {
-        width: calc(50% - 4px);
-        font-size: 11px;
-        padding: 10px 6px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        text-align: center;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1.3;
-        white-space: normal;
-
-        border: 2px solid #40526b;
-        border-radius: 12px;
-        background: #fff;
-        color: #40526b;
-        text-decoration: none;
-        box-sizing: border-box;
-    }
 }
-
+    }}
 /* ── Product Inquiry CTA container ──────────────────────────── */
 /* Single wrapper rendered once, below .items-wrapper in #Items  */
 .product-inquiry-container {
@@ -465,15 +430,15 @@
 .pdf-links{
     display:flex;
     jusitfy-content:center;
-    gap:180px;
+    gap:30%;
     margin-top:20px;
-.pdf-btn-right{
-    margin-left:130px;
 }
+.pdf-btn-right{
+    margin-left:200px;
 }
 .pdf-btn {
    display: inline-block;
-    width: 350px;
+    width: 180px; /*350*/
     height: 50px;
     line-height: 45px;
     text-align: center;
