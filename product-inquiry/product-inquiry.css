@@ -49,6 +49,33 @@
     box-shadow: none;
     transition: none !important;
 }
+.pdf-links{
+    display:flex;
+    gap:180px;
+    margin-top:20px;
+    }
+.pdf-btn-right{
+    margin-left:130px;
+}
+.pdf-btn {
+   display: inline-block;
+    width: 350px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    background: white;
+    color: #445875;
+    border: 2px solid #1f1f1f;
+    border-radius: 14px;
+    text-decoration: none;  /* removes underline */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.pdf-btn:hover {
+    text-decoration: none;  /* keeps underline removed on hover */
+    background:lightblue;
+}
 
 /* Desktop hover — mirrors .chat-logo:hover expand + lift */
 @media (min-width: 769px) {
@@ -435,31 +462,4 @@
         overflow-y: auto;
     }
 }
-.pdf-links{
-    display:flex;
-    jusitfy-content:center;
-    gap:180px;
-    margin-top:20px;
-.pdf-btn-right{
-    margin-left:130px;
-}
-}
-.pdf-btn {
-   display: inline-block;
-    width: 350px;
-    height: 50px;
-    line-height: 45px;
-    text-align: center;
-    background: white;
-    color: #445875;
-    border: 2px solid #1f1f1f;
-    border-radius: 14px;
-    text-decoration: none;  /* removes underline */
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-}
 
-.pdf-btn:hover {
-    text-decoration: none;  /* keeps underline removed on hover */
-    background:lightblue;
-}
