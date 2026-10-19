@@ -1,7 +1,7 @@
 .product-inquiry-btn {
     /* Exact dimensions from .chat-logo */
      display: inline-block;
-    width: 350px;/*350px*/
+    width: 350px;
     height: 50px;
     line-height: 45px;
     text-align: center;
@@ -63,8 +63,7 @@
 /* Mobile — exact .chat-logo mobile values */
 @media (max-width: 768px) {
     .product-inquiry-btn,
-        .pdf-links,
-            .pdf-btn {
+    .pdf-btn {
         width: 350px;
         height: 48px;
         border-radius: 0.75rem;
@@ -103,7 +102,7 @@
         color: #ffffff !important;
     }
 }
-    }}
+
 /* ── Product Inquiry CTA container ──────────────────────────── */
 /* Single wrapper rendered once, below .items-wrapper in #Items  */
 .product-inquiry-container {
@@ -430,15 +429,15 @@
 .pdf-links{
     display:flex;
     jusitfy-content:center;
-    gap:30%;
+    gap:180px;
     margin-top:20px;
-}
 .pdf-btn-right{
-    margin-left:200px;
+    margin-left:130px;
+}
 }
 .pdf-btn {
    display: inline-block;
-    width: 180px; /*350*/
+    width: 350px;
     height: 50px;
     line-height: 45px;
     text-align: center;
