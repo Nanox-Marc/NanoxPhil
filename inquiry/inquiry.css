@@ -327,14 +327,12 @@
     z-index: 3;
     transition: all 0.25s ease;
     width: 100%;
-    color: white;
 }
 
 /* Desktop hover effects - move header up */
 @media (min-width: 769px) {
     .chat-logo:hover .inquire_header_container {
         transform: translateY(-20px);
-        color: white;
     }
 }
 
@@ -343,7 +341,7 @@
     font-size: 18px;
     font-weight: 797;
     white-space: nowrap;
-    color: white;
+    color: rgb(11, 25, 42);
     margin: 0;
     letter-spacing: 0.5px;
     text-transform: uppercase;
