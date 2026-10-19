@@ -62,8 +62,7 @@
 
 /* Mobile — exact .chat-logo mobile values */
 @media (max-width: 768px) {
-    .product-inquiry-btn,
-    .pdf-btn {
+    .product-inquiry-btn{
         width: 350px;
         height: 48px;
         border-radius: 0.75rem;
@@ -100,6 +99,28 @@
         scale: 1 !important;
         transition: none !important;
         color: #ffffff !important;
+    }
+}
+@media (max-width: 768px) {
+
+    .pdf-btn {
+        width: 90% !important;
+        max-width: 350px;
+        min-height: 50px;
+
+        padding: 12px 15px;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3;
+
+        white-space: normal;   /* allows wrapping */
+        word-break: keep-all;
     }
 }
 
