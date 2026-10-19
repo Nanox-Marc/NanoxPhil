@@ -128,19 +128,32 @@
         color: #ffffff !important;
     }
 }
-@media (max-width: 768px) {
-   .pdf-btn {
+@media screen and (max-width: 768px) {
+
+    .pdf-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
         width: 90% !important;
-        max-width: 340px;
-       
-        padding: 12px;
-        font-size: 14px;
-        line-height: 1.4;
-        
-        white-space: normal;
-        word-break: keep-all;
+        max-width: 320px;
+        min-height: 60px;
+
+        margin: 10px auto;
+        padding: 12px 20px;
+
+        box-sizing: border-box;
         text-align: center;
-}}
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+}
 
 /* ── Product Inquiry CTA container ──────────────────────────── */
 /* Single wrapper rendered once, below .items-wrapper in #Items  */
