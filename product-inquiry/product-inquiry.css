@@ -106,10 +106,11 @@
 }
     /*PDF BUTTONS*/
 /* Mobile — exact .chat-logo mobile values */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .pdf-btn {
         width: fit-content;
-        max-width: 90%;
+        flex: 1 1 100%;
+        max-width: 100%;
         padding: 12px 20px;
         height: 48px;
         white-space: normal;
