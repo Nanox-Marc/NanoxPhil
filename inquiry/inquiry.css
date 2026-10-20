@@ -224,7 +224,8 @@
 .chat-logo {
     width: 254px;
     height: 48px;
-    background-color: white;
+    background: white;
+    color: #445875;
     margin-top: 30px;
     border-radius: 0.75rem;
     border: 3px solid #40526b;
@@ -232,7 +233,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #40526b;
     position: relative;
     transition: all 0.25s ease;
     overflow: hidden;
@@ -256,9 +256,10 @@
         width: 255px;
         height: 85px;
         border-radius: 0.75rem;
-        background-color: white;
         transform: translateY(-3px);
         padding: 0 8px;
+        background: white;
+        color: #445875;
     }
 }
 
