@@ -78,7 +78,7 @@
         width: 254px !important;
         height: 48px !important;
         background-color: #FFFFFF !important;
-        border: 3px solid #0b192a !important;
+        border: 3px solid #40526b !important;
         border-radius: 0.75rem !important;
         box-shadow: 0 4px 15px rgba(11, 25, 42, 0.3) !important;
         transform: none !important;
@@ -267,7 +267,7 @@
     font-size: 28px;
     width: 28px;
     height: 28px;
-    color: rgb(11, 25, 42);
+    color: #40526b;
     display: inline-block;
     line-height: 1;
     margin-right: 12px;
@@ -383,7 +383,7 @@
 .inquire_subheader_line1 {
     font-size: 14px;
     font-weight: 600;
-    color: rgb(11, 25, 42);
+    color: #40526b;
     margin: 0;
     padding: 0;
     line-height: 0.9;
@@ -397,7 +397,7 @@
 .inquire_subheader_line2 {
     font-size: 14px;
     font-weight: 600;
-    color: rgb(11, 25, 42);
+    color: #40526b;
     margin: 0;
     padding: 0;
     line-height: 1;
