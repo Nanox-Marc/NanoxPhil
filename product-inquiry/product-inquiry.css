@@ -62,13 +62,28 @@
 @media (min-width: 769px) {
     .pdf-links
     {
-        display: flex;
+        display: block;
+        width: 350px;
+        max-width: 90%;
+        margin: 0px;
+        text-align: center;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
         flex-wrap: wrap;
     }
+    }
+    .pdf-btn{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    gap:0px;
+    margin-top:20px;
+    }
+    .pdf-btn-right{
+    margin-left:0px;
 }
+
 
 /* Mobile — exact .chat-logo mobile values */
 @media (max-width: 768px) {
@@ -111,33 +126,21 @@
         color: #ffffff !important;
     }
 }
-@media screen and (max-width: 768px) {
-
-    .pdf-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 90% !important;
-        max-width: 340px;
-        min-height: 80px;
-
-        margin: 0 auto;
-        padding: 12px 15px;
-
-        box-sizing: border-box;
+@media (min-width: 768px) {
+    .pdf-links
+    {
+        display: block;
+        width: 350px;
+        max-width: 90%;
+        margin: 0px;
         text-align: center;
-
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.3;
-
-        white-space: normal;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-        word-break: normal;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    .pdf-links{
+    }
+    .pdf-btn{
     align-items: center;
     justify-content: center;
     display:flex;
@@ -147,7 +150,6 @@
     .pdf-btn-right{
     margin-left:0px;
 }
-    }
 
 /* ── Product Inquiry CTA container ──────────────────────────── */
 /* Single wrapper rendered once, below .items-wrapper in #Items  */
