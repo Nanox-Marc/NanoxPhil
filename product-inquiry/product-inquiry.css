@@ -65,6 +65,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20px;
         flex-wrap: wrap;
     }
 }
@@ -118,7 +119,7 @@
         justify-content: center;
 
         width: 90% !important;
-        max-width: 350px;
+        max-width: 340px;
         min-height: 80px;
 
         margin: 0 auto;
@@ -133,12 +134,12 @@
 
         white-space: normal;
         box-sizing: border-box;
-        /*overflow-wrap: break-word;
-        word-break: normal;*/
+        overflow-wrap: break-word;
+        word-break: normal;
     }
     .pdf-links{
     display:flex;
-    /*gap:80px;*/
+    gap:80px;
     margin-top:20px;
     }
     }
