@@ -119,8 +119,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5 px;
-    width: 100%;
+    Width: 100%;
 
           /* Lock all transforms/transitions on mobile (mirrors mobile inquiry.css) */
         transform: none !important;
@@ -504,12 +503,4 @@
 .pdf-btn:hover {
     text-decoration: none;  /* keeps underline removed on hover */
     background:lightblue;
-}
-.pdf-links{
-    display:flex;
-    gap:160px;
-    margin-top:20px;
-    }
-.pdf-btn-right{
-    margin-left:60px;
 }
