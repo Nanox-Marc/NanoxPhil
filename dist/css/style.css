@@ -64,25 +64,18 @@
     padding: 90px 0px 50px 0px;
   }
   .banner .banner-wrapper {
-    max-width: 100%;
-    /*display: flex;*/
-    padding-left: 20px;
-    padding-right: 20px;
-    /*flex-direction: column;*/
-    align-items: flex-start; /*left align*/
-    /*padding-left: 30px;*/
-    /*margin-bottom: 0px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
   }
   .banner .banner-wrapper .nanox-logo {
-    width: 380px;
-    max-width: 100%;
-    margin-bottom: 10px;
+    width: 400px;
   }
   .banner .banner-wrapper .banner-subtitle {
-    margin-top: 0;
-    text-align: left;
-    font-size: 1.25rem;
-    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 @media (max-width: 575.98px) {
@@ -91,24 +84,18 @@
     padding: 100px 0px 40px 0px;
   }
   .banner .banner-wrapper {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0px;*/
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 0;
-    padding-left: 20px;
+    margin-bottom: 0px;
   }
   .banner .banner-wrapper .nanox-logo {
-    max-width: 280px; /*350*/
-    max-width: 100%;
-    padding: 0px;/*40px*/
-    margin-bottom: 20px; /*30px*/
+    max-width: 350px;
+    padding: 0px 40px;
+    margin-bottom: 30px;
   }
   .banner .banner-wrapper .banner-subtitle {
-   text-align: left; /*center*/
+    text-align: center;
     font-size: 18px;
     line-height: 25px;
     padding: 0px 15px 0px 0px;
