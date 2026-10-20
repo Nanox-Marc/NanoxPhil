@@ -45,21 +45,28 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .banner {
-        height: 520px;
-        background-position: center top;
-    }
-
-    .banner .banner-wrapper {
+ /* .banner .banner-wrapper {
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
+        padding-top: 40px; /* pushes logo below menu */
+    
+
+   /* .banner .banner-wrapper .nanox-logo {
+        width: 320px; /* smaller logo */
+        /* max-width: 100%;*/
+.banner {
+  margin-top: 80px;
+  background-position: left top;
+}
+.banner .banner-wrapper .nanox-logo {
+  width: 320px;
+}
+    .banner .banner-wrapper .banner-subtitle {
+        font-size: 18px;
+        line-height: 28px;
+        width: 85%;
     }
 
-    .banner .banner-wrapper .nanox-logo {
-        width: 320px;
-        max-width: 100%;
-    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
