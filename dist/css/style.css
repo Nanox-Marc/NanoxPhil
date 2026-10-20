@@ -1473,15 +1473,18 @@
   }
 }
 
-/* Tablet Landscape */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-    .banner .banner-wrapper {
-        padding-top: 100px; /* pushes logo below menu */
+    .header {
+        height: 80px;
     }
 
-    .banner .banner-wrapper .nanox-logo {
-        width: 350px;
+    .banner-wrapper {
+        padding-top: 80px !important;
+    }
+
+    .banner .nanox-logo {
+        width: 320px !important;
         max-width: 80%;
     }
 }
