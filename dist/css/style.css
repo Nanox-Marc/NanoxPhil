@@ -1475,13 +1475,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-    .banner .banner-wrapper {
-        align-items: flex-start;
-        padding-left: 30px;
+    .jdi-logo {
+       margin-left: -100px !important;
     }
 
-    .banner .banner-wrapper .nanox-logo {
-        width: 320px;
-        margin-left: 0;
-    }
 }
