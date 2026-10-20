@@ -113,17 +113,16 @@
 }
 @media (max-width: 768px) {
 
-    .pdf-links
-     {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        width: 90%;
-        max-width: 380px;
-        margin: 0 auto;
-        box-sizing: border-box;
+   /* Center both PDF buttons */
+.pdf-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5 px;
+    width: 100%;
 
+          /* Lock all transforms/transitions on mobile (mirrors mobile inquiry.css) */
         transform: none !important;
         -webkit-transform: none !important;
         transition: none !important;
@@ -133,11 +132,34 @@
         -webkit-appearance: none !important;
         appearance: none !important;
         outline: none !important;
-    }
+}
 
-    .pdf-btn-right {
-        margin-left: 0 !important;
-    }
+.pdf-btn-right{
+    margin-left: 0;
+}
+
+/* Button styling */
+.pdf-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    background: #f4f4e8;
+    color: #445875;
+    border: 2px solid #1f1f1f;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+.pdf-btn:hover{
+    text-decoration: none;
+    background: lightblue;
+}
 }
 
 /* ── Product Inquiry CTA container ──────────────────────────── */
