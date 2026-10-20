@@ -1480,11 +1480,15 @@
     }
 
     .banner-wrapper {
-        padding-top: 80px !important;
+        padding-top: 100px !important;
     }
 
-    .banner .nanox-logo {
-        width: 320px !important;
+    .banner{
+      padding-top: 100px !important;
+        margin-top: 80px;
+    }
+    .nanox-logo{ 
+        width: 300px !important;
         max-width: 80%;
     }
 }
