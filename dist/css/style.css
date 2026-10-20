@@ -1475,20 +1475,13 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-    .header {
-        height: 80px;
+    .banner .banner-wrapper {
+        align-items: flex-start;
+        padding-left: 30px;
     }
 
-    .banner-wrapper {
-        padding-top: 100px !important;
-    }
-
-    .banner{
-      padding-top: 100px !important;
-        margin-top: 80px;
-    }
-    .nanox-logo{ 
-        width: 300px !important;
-        max-width: 80%;
+    .banner .banner-wrapper .nanox-logo {
+        width: 320px;
+        margin-left: 0;
     }
 }
