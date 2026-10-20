@@ -65,6 +65,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20px;
         flex-wrap: wrap;
     }
 }
@@ -113,15 +114,15 @@
 @media screen and (max-width: 768px) {
 
     .pdf-btn {
-        display: block;
+        display: flex;
         align-items: center;
         justify-content: center;
 
-        width: 350px !important;
-        max-width: 90%;
+        width: 90% !important;
+        max-width: 340px;
         min-height: 80px;
-        text-align: center;
-        margin: 20px auto;
+
+        margin: 0 auto;
         padding: 12px 15px;
 
         box-sizing: border-box;
@@ -137,15 +138,14 @@
         word-break: normal;
     }
     .pdf-links{
-    display:flex;
-    justify-content: center;
     align-items: center;
-    gap:30px;
+    justify-content: center;
+    display:flex;
+    gap:0px;
     margin-top:20px;
-    flex-wrap: wrap;
-}
+    }
     .pdf-btn-right{
-    margin-left: 0px;
+    margin-left:0px;
 }
     }
 
@@ -472,13 +472,14 @@
         overflow-y: auto;
     }
 }
+
 .pdf-links{
     display:flex;
-    gap:150px;
+    gap:160px;
     margin-top:20px;
     }
 .pdf-btn-right{
-    margin-left:50px;
+    margin-left:60px;
 }
 .pdf-btn {
    display: inline-block;
