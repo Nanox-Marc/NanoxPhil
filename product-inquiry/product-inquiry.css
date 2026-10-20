@@ -117,18 +117,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 8px;
     }
 
-    .pdf-btn,
-    {
-        width: 280px;
-        max-width: 90%;
+    .pdf-btn {
+        width: 90%;
+        max-width: 380px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .pdf-btn-right {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 }
 
