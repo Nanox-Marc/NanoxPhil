@@ -45,23 +45,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .banner .banner-wrapper {
+    .banner {
+        height: 520px;
+        background-position: center top;
+    }
+
+    .banner .banner-wrapper {
         display: flex;
         flex-direction: column;
-        padding-top: 40px; /* pushes logo below menu */
+        margin-bottom: 40px;
     }
 
     .banner .banner-wrapper .nanox-logo {
-        width: 320px; /* smaller logo */
+        width: 320px;
         max-width: 100%;
     }
-
-    .banner .banner-wrapper .banner-subtitle {
-        font-size: 18px;
-        line-height: 28px;
-        width: 85%;
-    }
-
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1473,21 +1471,3 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .banner {
-        height: 520px;
-        background-position: center top;
-    }
-
-    .banner .banner-wrapper {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-    }
-
-    .banner .banner-wrapper .nanox-logo {
-        width: 320px;
-        max-width: 100%;
-    }
-
-}
