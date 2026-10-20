@@ -1474,3 +1474,14 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .banner .banner-wrapper {
+        padding-top: 60px;
+    }
+
+    .banner .banner-wrapper .nanox-logo {
+        width: 320px;
+        max-width: 80%;
+    }
+}
