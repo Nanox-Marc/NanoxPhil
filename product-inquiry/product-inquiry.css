@@ -113,7 +113,8 @@
 }
 @media (max-width: 768px) {
 
-    .pdf-btn {
+    .pdf-links
+     {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -122,6 +123,16 @@
         max-width: 380px;
         margin: 0 auto;
         box-sizing: border-box;
+
+        transform: none !important;
+        -webkit-transform: none !important;
+        transition: none !important;
+        -webkit-transition: none !important;
+        scale: 1 !important;
+        -webkit-tap-highlight-color: transparent !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        outline: none !important;
     }
 
     .pdf-btn-right {
