@@ -35,7 +35,7 @@
         margin-left: auto !important;
         margin-right: auto !important;
         margin-top: 30px;
-        background-color: white;
+        background-color: #FFFFFF;
         border-radius: 0.75rem;
         border: 3px solid #40526b;
         
@@ -77,7 +77,7 @@
     .chat-logo:focus-visible {
         width: 254px !important;
         height: 48px !important;
-        background-color: white !important;
+        background-color: #FFFFFF !important;
         border: 3px solid #0b192a !important;
         border-radius: 0.75rem !important;
         box-shadow: 0 4px 15px rgba(11, 25, 42, 0.3) !important;
@@ -224,8 +224,7 @@
 .chat-logo {
     width: 254px;
     height: 48px;
-    background: white;
-    color: #445875;
+    background-color: #FFFFFF;
     margin-top: 30px;
     border-radius: 0.75rem;
     border: 3px solid #40526b;
@@ -233,6 +232,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: #40526b;
     position: relative;
     transition: all 0.25s ease;
     overflow: hidden;
@@ -256,10 +256,9 @@
         width: 255px;
         height: 85px;
         border-radius: 0.75rem;
+        background-color: #FFFFFF;
         transform: translateY(-3px);
         padding: 0 8px;
-        background: white;
-        color: #445875;
     }
 }
 
@@ -342,7 +341,7 @@
     font-size: 18px;
     font-weight: 797;
     white-space: nowrap;
-    color: rgb(11, 25, 42);
+    color: #40526B;
     margin: 0;
     letter-spacing: 0.5px;
     text-transform: uppercase;
