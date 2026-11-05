@@ -465,6 +465,40 @@ display: flex;
         flex-direction: row;
     }
 }
+/* =========================
+   DROP DOWN
+========================= */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #1F4E8C;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    z-index: 9999;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.custom-dropdown .dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #1e90ff;
+}
     </style>
   </head>
   <body>
@@ -482,7 +516,16 @@ display: flex;
                     <div class="link-list">
                         <a href="#About-Us" class="link-text">About Us</a>
                         <a href="#Products"class="link-text">Services</a>
-                        <a href="#Items"class="link-text">Products</a>
+                      
+                        <div class="dropdown custom-dropdown">
+                        <a href="#Items" class="link-text">Products ▼</a>
+
+                        <div class="dropdown-menu">
+                       <a class="dropdown-item" href="High End Applications.pdf" target="_blank" rel="noopener noreferrer">HIGH-END APPLICATION LIST</a>
+                       <a class="dropdown-item" href="Cost Effective Applications.pdf" target="_blank" rel="noopener noreferrer">COST-EFFECTIVE PRODUCT LIST</a>
+                        </div>
+                        </div>
+
                         <a href="#Contacts" target="" class="link-text">Contact Us</a>
                         <a href="policy.html" target="" class="link-text">Privacy Policy</a>
                     </div>
@@ -541,7 +584,7 @@ display: flex;
                     <p class="section-title">ABOUT US</p>
                     <div class="title-border"></div>
                     <p class="section-text">
-                        A manufacturing company in the Philippines with more than 25 years of expertise. A subsidiary of JDI (Japan Display Inc.) 
+                        A manufacturing company in the Philippines with more than 25 years of expertise. A subsidiary of JDI (Japan Display Inc.). 
                     </p>
                     <p class="section-text">
                         Leading the future in LCDs and Beyond Display technologies.
@@ -574,7 +617,7 @@ display: flex;
             <div class="title-holder">
                 <p class="section-title">WHAT WE DO</p>
                 <p class="section-subtitle">
-                    "Nanox Philippines Inc. offers Electronics Manufacturing Services (EMS) with outstanding QCD performance, collaborating for your company's success"
+                    "Nanox Philippines, Inc. offers Electronics Manufacturing Services (EMS) with outstanding QCD performance, collaborating for your company's success"
                 </p>
             </div>
 
@@ -678,6 +721,12 @@ display: flex;
             <p class="section-subtitle">
                 We provide thin-film substrates with high-definition (high resolution), low noise (high SNR), and wide-area TFT switching (wide V-I characteristics) functions using semiconductors with high electron mobility.                  
             </p>
+                
+          <br><div class="pdf-links">
+<a href="High End Applications.pdf" target="_blank" rel="noopener noreferrer" class="pdf-btn pdf-btn-right">HIGH-END APPLICATION LIST</a>
+<a href="Cost Effective Applications.pdf" target="_blank" rel="noopener noreferrer" class="pdf-btn">COST-EFFECTIVE PRODUCT LIST</a>
+</div>
+        </div>
             <div class="items-wrapper">
                 
                 <div class="item-holder">
@@ -728,14 +777,7 @@ display: flex;
                     </div>
                 </div>
             </div>
-            <br> 
-
-           <div class="pdf-links">
-<a href="High End Applications.pdf" target="_blank" rel="noopener noreferrer" class="pdf-btn pdf-btn-right">HIGH-END APPLICATION LIST</a>
-<a href="Cost Effective Applications.pdf" target="_blank" rel="noopener noreferrer" class="pdf-btn">COST-EFFECTIVE PRODUCT LIST</a>
-</div>
-        </div>
-    
+         
     <div class="recognition">
         <div class="container">
             <p class="section-title">SIGNIFICANT RECOGNITION AND CITATIONS</p>
@@ -1110,7 +1152,7 @@ console.log("Product Inquiry loaded.");
         <div class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <p class="footer-text">© 2026 Nanox Philippines Inc. All Rights Reserved.</p>
+                <p class="footer-text">© 2026 Nanox Philippines, Inc. All Rights Reserved.</p>
             </div>
             <!-- REMOVED the <p> tag and kept only the chevron icon with the new class -->
             <i class="fa fa-chevron-up up-button" id="btnScrollUp" aria-hidden="true"></i>
