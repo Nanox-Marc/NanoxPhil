@@ -499,6 +499,40 @@ display: flex;
 .custom-dropdown .dropdown-item:hover {
     background-color: #1e90ff;
 }
+ /* =========================
+   DROP DOWN mobile
+========================= */
+.custom-dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown1 .dropdown-menu1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #1F4E8C;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    z-index: 9999;
+}
+
+.custom-dropdown1:hover .dropdown-menu1 {
+    display: block;
+}
+
+.custom-dropdown1 .dropdown-item1 {
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.custom-dropdown1 .dropdown-item1:hover {
+    background-color: #1e90ff;
+}
     </style>
   </head>
   <body>
@@ -550,7 +584,16 @@ display: flex;
                     <div class="link-wrapper">
                         <a href="#About-Us" class="header-mobile-link hide-click">ABOUT US</a>
                         <a href="#Products"class="header-mobile-link hide-click">SERVICES</a>
-                        <a href="#Items"class="header-mobile-link hide-click">PRODUCTS</a>
+
+                      <div class="dropdown custom-dropdown1">
+                        <a href="#Items" class="header-mobile-link hide-click">Products ▼</a>
+
+                        <div class="dropdown-menu1">
+                       <a class="dropdown-item1" href="High End Applications.pdf" target="_blank" rel="noopener noreferrer">HIGH-END APPLICATION LIST</a>
+                       <a class="dropdown-item1" href="Cost Effective Applications.pdf" target="_blank" rel="noopener noreferrer">COST-EFFECTIVE PRODUCT LIST</a>
+                        </div>
+                        </div>
+                        
                         <a href="#Contacts" target="" class="header-mobile-link hide-click">CONTACT US</a>
                         <a href="policy.html" target="" class="header-mobile-link hide-click">PRIVACY POLICY</a>
                     </div>
