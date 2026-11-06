@@ -65,79 +65,41 @@
 .custom-dropdown .dropdown-item:hover {
     background-color: #1e90ff;
 }
-/* =========================
-   MOBILE NAVIGATION
+ /* =========================
+   DROP DOWN mobile
 ========================= */
-@media (max-width: 768px) {
-
-    .link-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .header-mobile-link {
-        display: block;
-        width: 100%;
-        padding: 12px 15px;
-        text-align: center;
-        white-space: nowrap;
-    }
-
-    /* Products container */
-    .custom-dropdown1 {
-        display: block;
-        width: 100%;
-        text-align: center;
-        position: relative;
-    }
-
-    /* Products link */
-    .custom-dropdown1 > a {
-        display: block;
-        width: 100%;
-        padding: 12px 15px;
-        text-align: center;
-    }
-
-    /* Submenu */
-    .custom-dropdown1 .dropdown-menu1 {
-        display: none;
-        position: static;      /* remove absolute positioning */
-        width: 100%;
-        min-width: 100%;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        border-radius: 0;
-        background: #1F4E8C;
-    }
-
-    /* Show menu on hover (desktop fallback) */
-    .custom-dropdown1:hover .dropdown-menu1 {
-        display: block;
-    }
-
-    .dropdown-item1 {
-        display: block;
-        text-align: center;
-        padding: 12px 15px;
-        color: #fff;
-        border-top: 1px solid rgba(255,255,255,.15);
-    }
-
-    .dropdown-item1:hover {
-        background: #1e90ff;
-    }
+@media (max-width: 768px){
+.custom-dropdown1 {
+    position: relative;
+    display: inline-block;
 }
-.dropdown-menu1 {
+
+.custom-dropdown1 .dropdown-menu1 {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #1F4E8C;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    z-index: 9999;
 }
 
-.dropdown-menu1.show {
+.custom-dropdown1:hover .dropdown-menu1 {
     display: block;
 }
+
+.custom-dropdown1 .dropdown-item1 {
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.custom-dropdown1 .dropdown-item1:hover {
+    background-color: #1e90ff;
+}}
     </style>
   </head>
   <body>
@@ -909,13 +871,5 @@
             });
         });
     </script>
-
-<script>
-document.getElementById("mobileProducts").addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".dropdown-menu1").classList.toggle("show");
-});
-</script>
-
 </body>
 </html>
