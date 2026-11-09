@@ -502,11 +502,42 @@ display: flex;
  /* =========================
    DROP DOWN mobile
 ========================= */
+/* Mobile */
+@media(max-width:768px){
 .custom-dropdown1 {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
-
+.custom-dropdown1 > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-wrapper{
+    display: flex;
+    align-items: center;
+}
+.header-mobile-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    white-space: nowrap;
+    min-width: 90px;
+    height: 60px;
+    text-align: center;
+}
+.custom-dropdown1 .header-mobile-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    white-space: nowrap;
+    min-width: 90px;
+    height: 60px;
+    text-align: center;
+}
 .custom-dropdown1 .dropdown-menu1 {
     display: none;
     position: absolute;
@@ -532,7 +563,7 @@ display: flex;
 
 .custom-dropdown1 .dropdown-item1:hover {
     background-color: #1e90ff;
-}
+}}
     </style>
   </head>
   <body>
@@ -586,7 +617,7 @@ display: flex;
                         <a href="#Products"class="header-mobile-link hide-click">SERVICES</a>
 
                       <div class="dropdown custom-dropdown1">
-                        <a href="#Items" class="header-mobile-link hide-click">PRODUCTS ▼</a>
+                        <a href="#Items" class="header-mobile-link hide-click">PRODUCTS▼</a>
 
                         <div class="dropdown-menu1">
                        <a class="dropdown-item1" href="High End Applications.pdf" target="_blank" rel="noopener noreferrer">HIGH-END APPLICATION LIST</a>
