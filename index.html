@@ -503,67 +503,46 @@ display: flex;
    DROP DOWN mobile
 ========================= */
 /* Mobile */
-@media(max-width:768px){
-.custom-dropdown1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-.custom-dropdown1 > a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.link-wrapper{
-    display: flex;
-    align-items: center;
-}
-.header-mobile-link{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+@media (max-width: 768px) {
+
+    .link-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+.header-mobile-link {
     white-space: nowrap;
-    min-width: 90px;
-    height: 60px;
-    text-align: center;
 }
-.custom-dropdown1 .header-mobile-link{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    white-space: nowrap;
-    min-width: 90px;
-    height: 60px;
-    text-align: center;
-}
-.custom-dropdown1 .dropdown-menu1 {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 180px;
-    background: #1F4E8C;
-    border: 1px solid #dadada;
-    border-radius: 4px;
-    z-index: 9999;
-}
+    .header-mobile-link,
+    .custom-dropdown1 > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        width: 100%;
+        padding: 12px 15px;
+        text-align: center;
+        line-height: 1.2;
+        margin: 0;
+    }
 
-.custom-dropdown1:hover .dropdown-menu1 {
-    display: block;
-}
+    .custom-dropdown1 {
+        width: 100%;
+    }
 
-.custom-dropdown1 .dropdown-item1 {
-    display: block;
-    padding: 10px 15px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
+    .custom-dropdown1 .dropdown-menu1 {
+        position: static;
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+        margin-top: 0;
+    }
 
-.custom-dropdown1 .dropdown-item1:hover {
-    background-color: #1e90ff;
-}}
+    .custom-dropdown1 .dropdown-item1 {
+        text-align: center;
+        padding: 12px 15px;
+    }
+}
     </style>
   </head>
   <body>
@@ -617,7 +596,9 @@ display: flex;
                         <a href="index.html#Products" class="header-mobile-link hide-click">SERVICES</a>
                         
                         <div class="dropdown custom-dropdown1">
-                        <a href="index.html#Items" class="header-mobile-link hide-click">PRODUCTS▼</a>
+                        <a href="index.html#Items" class="header-mobile-link hide-click">
+                        PRODUCTS <span style="margin-left:4px;">▼</span>
+                        </a>
 
                         <div class="dropdown-menu1">
                        <a class="dropdown-item1" href="High End Applications.pdf" target="_blank" rel="noopener noreferrer">HIGH-END APPLICATION LIST</a>
