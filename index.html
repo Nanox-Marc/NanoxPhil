@@ -465,6 +465,71 @@ display: flex;
         flex-direction: row;
     }
 }
+/* =========================
+   DROP DOWN mobile
+========================= */
+/* Mobile */
+@media(max-width:768px){
+.custom-dropdown1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.custom-dropdown1 > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-wrapper{
+    display: flex;
+    align-items: center;
+}
+.header-mobile-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    white-space: nowrap;
+    min-width: 90px;
+    height: 60px;
+    text-align: center;
+}
+.custom-dropdown1 .header-mobile-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    white-space: nowrap;
+    min-width: 90px;
+    height: 60px;
+    text-align: center;
+}
+.custom-dropdown1 .dropdown-menu1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #1F4E8C;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    z-index: 9999;
+}
+
+.custom-dropdown1:hover .dropdown-menu1 {
+    display: block;
+}
+
+.custom-dropdown1 .dropdown-item1 {
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.custom-dropdown1 .dropdown-item1:hover {
+    background-color: #1e90ff;
+}}
         /* =========================
    DROP DOWN
 ========================= */
@@ -499,52 +564,7 @@ display: flex;
 .custom-dropdown .dropdown-item:hover {
     background-color: #1e90ff;
 }
- /* =========================
-   DROP DOWN mobile
-========================= */
-/* Mobile Navigation */
-@media screen and (max-width: 768px) {
-
-    .header .header-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .header .header-wrapper .header-link .link-list {
-        display: flex;
-        align-items: center;
-    }
-
-    .header .header-wrapper .header-link .link-list .link-text,
-    .custom-dropdown > .link-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        margin: 0;
-        padding: 0 10px;
-        font-size: 16px;
-        line-height: 1;
-        color: #fff;
-        border-right: 1px solid #fff;
-    }
-
-    .custom-dropdown {
-        display: flex;
-        align-items: center;
-        height: 50px;
-    }
-
-    .custom-dropdown .link-text {
-        white-space: nowrap;
-    }
-
-    /* Remove border from last menu item */
-    .link-list > a:last-child {
-        border-right: none;
-    }
-}
+ 
     </style>
   </head>
   <body>
@@ -560,11 +580,11 @@ display: flex;
                 <a href="https://www.nanoxphilippines.com/"><img class="jdi-logo" src="./dist/assets/nanox-logo.png" alt="logo"></a>
                 <div class="header-link">
                     <div class="link-list">
-                        <a href="#About-Us" class="link-text">About Us</a>
-                        <a href="#Products"class="link-text">Services</a>
+                        <a href="index.html#About-Us" class="link-text">About Us</a>
+                        <a href="index.html#Products" class="link-text">Services</a>
                       
                         <div class="dropdown custom-dropdown">
-                        <a href="#Items" class="link-text">Products ▼</a>
+                        <a href="index.html#Items" class="link-text">Products▼</a>
 
                         <div class="dropdown-menu">
                        <a class="dropdown-item" href="High End Applications.pdf" target="_blank" rel="noopener noreferrer">HIGH-END APPLICATION LIST</a>
@@ -572,7 +592,7 @@ display: flex;
                         </div>
                         </div>
 
-                        <a href="#Contacts" target="" class="link-text">Contact Us</a>
+                        <a href="index.html#Contacts" target="" class="link-text">Contact Us</a>
                         <a href="policy.html" target="" class="link-text">Privacy Policy</a>
                     </div>
                     <div class="link-logo">
@@ -597,7 +617,7 @@ display: flex;
                         <a href="index.html#About-Us" class="header-mobile-link hide-click">ABOUT US</a>
                         <a href="index.html#Products" class="header-mobile-link hide-click">SERVICES</a>
                         
-                      <div class="dropdown custom-dropdown1">
+                        <div class="dropdown custom-dropdown1">
                         <a href="index.html#Items" class="header-mobile-link hide-click">PRODUCTS▼</a>
 
                         <div class="dropdown-menu1">
