@@ -34,6 +34,17 @@
         /* =========================
    DROP DOWN
 ========================= */
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+#About-Us,
+#Products,
+#Items,
+#Contacts{
+    scroll-padding-top: 120px;
+}
+
 .custom-dropdown {
     position: relative;
     display: inline-block;
@@ -70,6 +81,7 @@
 ========================= */
 /* Mobile */
 @media(max-width:768px){
+
 .custom-dropdown1 {
     position: relative;
     display: flex;
@@ -145,11 +157,11 @@
                 <a href="https://www.nanoxphilippines.com/"><img class="jdi-logo" src="./dist/assets/nanox-logo.png" alt="logo"></a>
                 <div class="header-link">
                     <div class="link-list">
-                        <a href="index.html#About-Us" class="link-text">About Us</a>
-                        <a href="index.html#Products" class="link-text">Services</a>
+                        <a href="index.html#About-Us" target="" class="link-text">About Us</a>
+                        <a href="index.html#Products" target="" class="link-text">Services</a>
                       
                         <div class="dropdown custom-dropdown">
-                        <a href="index.html#Items" class="link-text">Products▼</a>
+                        <a href="index.html#Items" target="" class="link-text">Products▼</a>
 
                         <div class="dropdown-menu">
                        <a class="dropdown-item" href="High End Applications.pdf" target="_blank" rel="noopener noreferrer">HIGH-END APPLICATION LIST</a>
